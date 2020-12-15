@@ -45,7 +45,7 @@ const startLogin = (uid) => {
         body: JSON.stringify(formData)
         };
       
-        fetch('http://localhost:3001/users/current', configObj).then(response => response.json()).then(json => {
+        fetch('http://idl-app-api.herokuapp.com/users/current', configObj).then(response => response.json()).then(json => {
             dispatch(login(json.user));
         });
     }
