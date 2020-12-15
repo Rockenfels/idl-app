@@ -1,4 +1,4 @@
-const url = 'http://idl-app-api.herokuapp.com/auth/';
+const url = 'https://idl-app-api.herokuapp.com/auth/';
 
 // Basic actions for various user states
 export const signup = () => ({
