@@ -23,7 +23,7 @@ function Login() {
                 window.alert("There was a problem, make sure your info is correct and try again.");
                 history.replace('/login');
             }
-        }, 500);
+        }, 2000);
     }
 
     const handleSignup = (e) => {
@@ -42,7 +42,6 @@ function Login() {
             ));
 
         setTimeout(() => {
-            debugger;
             if(user.accepted){
                 window.alert("Account created, please log in.");
                 document.getElementById('signup-username').value = "";
@@ -54,7 +53,7 @@ function Login() {
                 window.alert('Signup failed, please try again.')
             }
             
-        }, 500)
+        }, 2000)
     }
 
     
